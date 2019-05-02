@@ -1,6 +1,18 @@
 # ProfileStore.Client for Episerver
 Simple .NET client library for accessing the [Episerver Profile Store](https://world.episerver.com/documentation/developer-guides/profile-store/)
 
+## Configuration
+
+By default the library uses the following config settings to connect to the Profile Store, request these from Episerver support
+```xml
+<configuration>
+  <appSettings>
+    <add key="profileStore.RootApiUrl" value="" />
+    <add key="profileStore.SubscriptionKey" value="" />
+  </appSettings>
+</configuration>
+```
+
 ## Example usage
 ```csharp
 using Newtonsoft.Json.Linq;
