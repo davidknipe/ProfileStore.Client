@@ -6,10 +6,10 @@
     <Description>A set of helpers which can be used to access the Episerver Profile store</Description>
     <Authors>David Knipe</Authors>
     <Company />
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <PackageIconUrl>https://www.david-tec.com/global/media/ProfileStore.png?v=1.0.0</PackageIconUrl>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <RepositoryUrl>https://github.com/davidknipe/ProfileStore.Client</RepositoryUrl>
     <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
