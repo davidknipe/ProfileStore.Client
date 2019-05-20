@@ -40,6 +40,17 @@ namespace ProfileStore.Client.Impl
             }).First;
         }
 
+        public JToken GetProfileByProfileId(string profileId)
+        {
+            if (_log.IsDebugEnabled)
+                _log.DebugFormat("Attempting GetProfileByProfileId with profileid: {0}", profileId);
+
+            return GetProfileInternal(new List<Tuple<string, string>>()
+            {
+                new Tuple<string, string>("$filter", $"ProfileId eq {profileId}")
+            }).First;
+        }
+
         public JArray GetProfilesByEmail(string email)
         {
             if (_log.IsDebugEnabled)

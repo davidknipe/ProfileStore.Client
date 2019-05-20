@@ -16,6 +16,13 @@ namespace ProfileStore.Client.Interfaces
         JToken GetProfileByDeviceId(string deviceId);
 
         /// <summary>
+        /// Get the profile based on the profile Id
+        /// </summary>
+        /// <param name="profileId">The unique profile id of the user (this is the id seen in the UI)</param>
+        /// <returns>Object representing the profile</returns>
+        JToken GetProfileByProfileId(string profileId);
+
+        /// <summary>
         /// Get the profile based on the email address of the user
         /// </summary>
         /// <param name="email">The email to query for profiles on</param>
